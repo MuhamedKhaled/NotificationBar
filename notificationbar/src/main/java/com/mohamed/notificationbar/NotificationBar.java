@@ -45,7 +45,7 @@ public class NotificationBar {
         removeFromParent(content);
     }
 
-    public void show(){
+    public void show()  {
         if (notificationView!=null){
             final ViewGroup decorView = (ViewGroup) context.getWindow().getDecorView();
             final ViewGroup content = decorView.findViewById(android.R.id.content);

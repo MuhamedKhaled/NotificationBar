@@ -192,6 +192,19 @@ public class Notification extends LinearLayout implements View.OnTouchListener{
         createOutAnim();
     }
 
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        viewWidth = getWidth();
+        dismissOffsetThreshold = viewWidth / 3;
+
+        if (layoutGravity == Gravity.TOP) {
+            super.onLayout(changed, l, 0, r, notificationLayout.getMeasuredHeight());
+        } else {
+            super.onLayout(changed, l, t, r, b);
+        }
+    }
+
+
     private void createInAnim() {
         int animationResId = layoutGravity == Gravity.BOTTOM ? animationInBottom : animationInTop;
         Animation slideInAnimation = AnimationUtils.loadAnimation(getContext(),animationResId);
