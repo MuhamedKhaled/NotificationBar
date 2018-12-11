@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Notification">
+
+        <attr name="notificationTitleColor" format="color"/>
+        <attr name="notificationBodyColor" format="color"/>
+        <attr name="notificationActionColor" format="color"/>
+        <attr name="notificationBackgroundColor" format="color"/>
+
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="messageTextSize" format="dimension"/>
+        <attr name="actionTextSize" format="dimension"/>
+
+    </declare-styleable>
+
+</resources>
