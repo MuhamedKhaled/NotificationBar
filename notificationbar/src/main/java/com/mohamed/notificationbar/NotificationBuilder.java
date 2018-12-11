@@ -1,6 +1,5 @@
 package com.mohamed.notificationbar;
 
-import android.animation.Animator;
 import android.animation.AnimatorInflater;
 import android.animation.AnimatorSet;
 import android.app.Activity;
@@ -10,7 +9,6 @@ import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.StringRes;
-import android.view.Gravity;
 
 import com.mohamed.notificationbar.Interface.CustomViewInitializer;
 import com.mohamed.notificationbar.Interface.OnActionClickListener;

@@ -15,7 +15,7 @@ public class NotificationBar {
     private Notification notificationView;
     private final Activity context;
 
-    private NotificationBar(Activity context, Params params) {
+    public NotificationBar(Activity context, Params params) {
         this.context = context;
         if (params == null) {
             // since params is null, this notification object can only be used to dismiss
@@ -24,8 +24,8 @@ public class NotificationBar {
             return;
         }
 
-        //notificationView = new Notification(context);
-       // notificationView.setParams(params);
+        notificationView = new Notification(context);
+        notificationView.setParams(params);
     }
 
 
@@ -45,7 +45,7 @@ public class NotificationBar {
         removeFromParent(content);
     }
 
-    private void show(){
+    public void show(){
         if (notificationView!=null){
             final ViewGroup decorView = (ViewGroup) context.getWindow().getDecorView();
             final ViewGroup content = decorView.findViewById(android.R.id.content);
@@ -63,7 +63,7 @@ public class NotificationBar {
             return;
         }
 
-        // if exists, remove existing cookie
+        // if exists, remove existing notification
         int childCount = parent.getChildCount();
         for (int i = 0; i < childCount; i++) {
             View child = parent.getChildAt(i);
@@ -80,6 +80,7 @@ public class NotificationBar {
 
         parent.addView(notification);
     }
+
     private void removeFromParent(ViewGroup parent) {
         int childCount = parent.getChildCount();
         for (int i = 0; i < childCount; i++) {
@@ -92,5 +93,8 @@ public class NotificationBar {
 
     }
 
+    public View getView() {
+        return notificationView;
+    }
 }
 
