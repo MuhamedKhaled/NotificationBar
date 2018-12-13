@@ -29,7 +29,7 @@ public class NotificationBar {
     }
 
 
-    public static NotificationBuilder build(Activity activity) {
+    public static NotificationBuilder create(Activity activity) {
         return new NotificationBuilder(activity);
     }
 

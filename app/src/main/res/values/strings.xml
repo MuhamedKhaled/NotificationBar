@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NotificationBar</string>
+    <string name="default_one">Default One</string>
+
+    <string name="notification_title">Notification Title</string>
+    <string name="notification_body">Notification Body...</string>
+    <string name="action_text">Action</string>
+
+
 </resources>
