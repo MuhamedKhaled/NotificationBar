@@ -1,6 +1,8 @@
 # NotificationBar
 An Android Alerting Library aims to overcome the limitations of Toasts and Snackbars, while reducing the complexity of your layouts.
-<img src="./Images/app_demo.gif" width="360" height="640">
+
+<img src="./Images/app_demo.gif" width="360" height="500">
+
 # Installation
 Gradle:
 Step 1. Add the JitPack repository to your build file
@@ -32,7 +34,7 @@ Maven:
 </dependency>
 ```
 # Usage
-## Create Notification
+## Create basic Notification
 ### Using Kotlin
 ```kotlin
 NotificationBar.create(this@MainActivity)
