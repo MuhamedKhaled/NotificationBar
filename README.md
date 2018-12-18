@@ -1,5 +1,6 @@
 # NotificationBar
 An Android Alerting Library aims to overcome the limitations of Toasts and Snackbars, while reducing the complexity of your layouts.
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-NotificationBar-blue.svg)[![](https://jitpack.io/v/MuhamedKhaled/NotificationBar.svg)](https://jitpack.io/#MuhamedKhaled/NotificationBar)
 
 <img src="./Images/app_demo.gif" width="360" height="600">
 
