@@ -17,7 +17,9 @@ allprojects {
 	maven { url 'https://jitpack.io' }
       }
 }
+```
 Step 2. Add the dependency
+```groovy
 dependencies {
       implementation 'com.github.MuhamedKhaled:NotificationBar:1.0.0'
 } 
